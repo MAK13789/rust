@@ -1,11 +1,4 @@
-#[derive(Debug)]
-struct Person<'a> {
-    name: &'a str ,
-    age: u8
-}
-fn main() {
-    let name = "ronaldo";
-    let age = 36;
-    let ronaldo = Person { name, age };
-    println!("{:#?}", ronaldo);
-}
+/*
+going through https://doc.rust-lang.org/rust-by-example/primitives/literals.html
+currently on 2.1 literals and operators
+*/
