@@ -1,7 +1,11 @@
+#[derive(Debug)]
+struct Person<'a> {
+    name: &'a str ,
+    age: u8
+}
 fn main() {
-    println!("Hello, world!");
-    println!("{} test", 69);
-    println!("{0} is better than {1}", "Ronaldo", "Messi");
-    println!("{footballer} {goat}", footballer = "messi", goat = "ronaldo");
-    println!("{} of {:b} people know binary, the other half doesn't", 1, 2);
+    let name = "ronaldo";
+    let age = 36;
+    let ronaldo = Person { name, age };
+    println!("{:#?}", ronaldo);
 }
